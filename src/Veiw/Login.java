@@ -35,7 +35,6 @@ public class Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         usernamefunc = new javax.swing.JTextField();
@@ -46,7 +45,6 @@ public class Login extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         Entrarfunc = new javax.swing.JButton();
         chkShowPassword = new javax.swing.JCheckBox();
-        lblmensagem = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -73,9 +71,6 @@ public class Login extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo-removebg.png"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, 180));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_close_window_30px.png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -135,11 +130,6 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(chkShowPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, -1, -1));
-
-        lblmensagem.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        lblmensagem.setForeground(new java.awt.Color(204, 0, 0));
-        lblmensagem.setText("L");
-        jPanel2.add(lblmensagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 20, -1));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, 446, 507));
 
@@ -215,7 +205,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JCheckBox chkShowPassword;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -224,7 +213,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JLabel lblmensagem;
     private javax.swing.JPasswordField textPasswordfunc;
     private javax.swing.JTextField usernamefunc;
     // End of variables declaration//GEN-END:variables

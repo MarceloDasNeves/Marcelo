@@ -1545,7 +1545,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel61">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/imagens/Marcelo2.png"/>
+                      <Image iconType="3" name="/Veiw/imagens/logo2.png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -2134,7 +2134,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel60">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/imagens/Marcelo2.png"/>
+                      <Image iconType="3" name="/Veiw/imagens/logo2.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2259,7 +2259,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel78">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/imagens/Marcelo2.png"/>
+                      <Image iconType="3" name="/Veiw/imagens/logo2.png"/>
                     </Property>
                   </Properties>
                   <Constraints>
@@ -2962,7 +2962,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel91">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/imagens/Marcelo2.png"/>
+                      <Image iconType="3" name="/Veiw/imagens/logo2.png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -3067,7 +3067,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel68">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/imagens/Marcelo2.png"/>
+                      <Image iconType="3" name="/Veiw/imagens/logo2.png"/>
                     </Property>
                   </Properties>
                 </Component>

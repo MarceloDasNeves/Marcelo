@@ -854,7 +854,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
+        jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo2.png"))); // NOI18N
 
         jLabel66.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jLabel66.setForeground(new java.awt.Color(0, 0, 0));
@@ -1163,7 +1163,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
 
         p3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 1100, 150));
 
-        jLabel60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
+        jLabel60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo2.png"))); // NOI18N
         p3.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 50, 50));
 
         editaradmin.setBackground(new java.awt.Color(0, 102, 255));
@@ -1197,7 +1197,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
         jLabel77.setText("Administrador:");
         p4.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 50, -1, -1));
 
-        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
+        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo2.png"))); // NOI18N
         p4.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 12, -1, 40));
 
         jLabel79.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -1405,7 +1405,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
             }
         });
 
-        jLabel91.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
+        jLabel91.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo2.png"))); // NOI18N
 
         javax.swing.GroupLayout p6Layout = new javax.swing.GroupLayout(p6);
         p6.setLayout(p6Layout);
@@ -1473,7 +1473,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
 
         p7.setBackground(new java.awt.Color(204, 204, 204));
 
-        jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
+        jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo2.png"))); // NOI18N
 
         jLabel69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_car_30px.png"))); // NOI18N
 

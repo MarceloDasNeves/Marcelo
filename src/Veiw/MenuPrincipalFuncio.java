@@ -618,7 +618,8 @@ public class MenuPrincipalFuncio extends javax.swing.JFrame {
         jLabel67.setForeground(new java.awt.Color(0, 0, 0));
         jLabel67.setText("TOTAL DE ESPAÇO:");
 
-        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
+        jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo2.png"))); // NOI18N
 
         jLabel49.setForeground(new java.awt.Color(0, 0, 0));
         jLabel49.setText("jLabel49");
@@ -807,7 +808,8 @@ public class MenuPrincipalFuncio extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
+        jLabel89.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo2.png"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
@@ -828,19 +830,6 @@ public class MenuPrincipalFuncio extends javax.swing.JFrame {
                                 .addGap(72, 72, 72)
                                 .addComponent(tipolientefunc, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(p2Layout.createSequentialGroup()
-                                .addComponent(jLabel30)
-                                .addGap(18, 18, 18)
-                                .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel31)
-                                    .addComponent(jLabel32))
-                                .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(p2Layout.createSequentialGroup()
-                                        .addGap(319, 319, 319)
-                                        .addComponent(jLabel89))
-                                    .addGroup(p2Layout.createSequentialGroup()
-                                        .addGap(306, 306, 306)
-                                        .addComponent(jLabel2))))
-                            .addGroup(p2Layout.createSequentialGroup()
                                 .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(176, 176, 176)
                                 .addComponent(jLabel37))
@@ -849,7 +838,7 @@ public class MenuPrincipalFuncio extends javax.swing.JFrame {
                                 .addGap(258, 258, 258)
                                 .addComponent(jLabel38))
                             .addGroup(p2Layout.createSequentialGroup()
-                                .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(p2Layout.createSequentialGroup()
                                         .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(nomepropritariofunc, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -861,7 +850,20 @@ public class MenuPrincipalFuncio extends javax.swing.JFrame {
                                     .addGroup(p2Layout.createSequentialGroup()
                                         .addComponent(descricaofunc, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(72, 72, 72)
-                                        .addComponent(telefonefunc, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(telefonefunc, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(p2Layout.createSequentialGroup()
+                                        .addComponent(jLabel30)
+                                        .addGap(18, 18, 18)
+                                        .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel31)
+                                            .addComponent(jLabel32))
+                                        .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(p2Layout.createSequentialGroup()
+                                                .addGap(278, 278, 278)
+                                                .addComponent(jLabel89))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, p2Layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jLabel2)))))
                                 .addGap(105, 105, 105)
                                 .addGroup(p2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel39)
@@ -965,7 +967,7 @@ public class MenuPrincipalFuncio extends javax.swing.JFrame {
         p3.setBackground(new java.awt.Color(204, 204, 204));
         p3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
+        jLabel78.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo2.png"))); // NOI18N
         p3.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 12, -1, 40));
 
         jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_car_30px.png"))); // NOI18N
@@ -1191,7 +1193,7 @@ public class MenuPrincipalFuncio extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo2.png"))); // NOI18N
 
         javax.swing.GroupLayout p5Layout = new javax.swing.GroupLayout(p5);
         p5.setLayout(p5Layout);
@@ -1277,7 +1279,7 @@ public class MenuPrincipalFuncio extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Trocar conta:");
 
-        jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
+        jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo2.png"))); // NOI18N
 
         jLabel69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_car_30px.png"))); // NOI18N
 

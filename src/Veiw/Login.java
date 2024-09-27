@@ -11,13 +11,13 @@ import java.awt.event.ItemEvent;
  *
  * @author mucav
  */
-public class LoginFunc extends javax.swing.JFrame {
+public class Login extends javax.swing.JFrame {
        
 
     /**
      * Creates new form LoginFunc
      */
-    public LoginFunc() {
+    public Login() {
         initComponents();
         
     }
@@ -34,7 +34,6 @@ public class LoginFunc extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -46,8 +45,8 @@ public class LoginFunc extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
         Entrarfunc = new javax.swing.JButton();
-        Administrador = new javax.swing.JLabel();
         chkShowPassword = new javax.swing.JCheckBox();
+        lblmensagem = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -56,52 +55,27 @@ public class LoginFunc extends javax.swing.JFrame {
                 formComponentAdded(evt);
             }
         });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText("BEM-VINDO");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/3108285.jpg"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 161, -1, 334));
 
-        jLabel8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel8.setText("Funcinarios");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(146, 146, 146)
-                        .addComponent(jLabel8))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(jLabel1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(jLabel1)
-                .addGap(32, 32, 32)
-                .addComponent(jLabel8)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 507));
 
         jPanel2.setBackground(new java.awt.Color(0, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo.png"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 10, -1, 187));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/logo-removebg.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, 180));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_close_window_30px.png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -153,14 +127,6 @@ public class LoginFunc extends javax.swing.JFrame {
         Entrarfunc.setBorder(null);
         jPanel2.add(Entrarfunc, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 380, 114, 33));
 
-        Administrador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/manager (2).png"))); // NOI18N
-        Administrador.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                AdministradorMouseClicked(evt);
-            }
-        });
-        jPanel2.add(Administrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 460, 33, -1));
-
         chkShowPassword.setBackground(new java.awt.Color(0, 0, 0));
         chkShowPassword.setText("Mostrar senha");
         chkShowPassword.addItemListener(new java.awt.event.ItemListener() {
@@ -170,21 +136,12 @@ public class LoginFunc extends javax.swing.JFrame {
         });
         jPanel2.add(chkShowPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 446, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(70, 70, 70))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 507, Short.MAX_VALUE)
-        );
+        lblmensagem.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        lblmensagem.setForeground(new java.awt.Color(204, 0, 0));
+        lblmensagem.setText("L");
+        jPanel2.add(lblmensagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 20, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, 446, 507));
 
         setSize(new java.awt.Dimension(845, 507));
         setLocationRelativeTo(null);
@@ -199,12 +156,6 @@ public class LoginFunc extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel4MouseClicked
 
          
-    private void AdministradorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdministradorMouseClicked
-        this.setVisible(false);
-        new LoginAdmin().setVisible(true);
-        
-    }//GEN-LAST:event_AdministradorMouseClicked
-
     private void formComponentAdded(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_formComponentAdded
         // TODO add your handling code here:
     }//GEN-LAST:event_formComponentAdded
@@ -240,26 +191,26 @@ public class LoginFunc extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginFunc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginFunc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginFunc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LoginFunc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LoginFunc().setVisible(true);
+                new Login().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Administrador;
     private javax.swing.JButton Entrarfunc;
     private javax.swing.JCheckBox chkShowPassword;
     private javax.swing.JLabel jLabel1;
@@ -269,11 +220,11 @@ public class LoginFunc extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JLabel lblmensagem;
     private javax.swing.JPasswordField textPasswordfunc;
     private javax.swing.JTextField usernamefunc;
     // End of variables declaration//GEN-END:variables

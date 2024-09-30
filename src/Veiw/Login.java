@@ -129,7 +129,7 @@ public class Login extends javax.swing.JFrame {
         lblmensagem.setForeground(new java.awt.Color(204, 0, 0));
         lblmensagem.setText("L");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_minimize_window_30px_1.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_horizontal_line_30px_3.png"))); // NOI18N
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel8MouseClicked(evt);

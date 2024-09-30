@@ -41,7 +41,7 @@
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="33" red="33" type="rgb"/>
+              <Color blue="50" green="3e" red="2c" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>
@@ -111,7 +111,9 @@
                 <Property name="text" type="java.lang.String" value="Painel"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                    <TitledBorder/>
+                    <TitledBorder>
+                      <Color PropertyName="color" blue="c7" green="c3" red="bd" type="rgb"/>
+                    </TitledBorder>
                   </Border>
                 </Property>
               </Properties>
@@ -121,6 +123,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="Parquear">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
                 </Property>
@@ -143,6 +148,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="funcion&#xe1;rios">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
                 </Property>
@@ -165,6 +173,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="Pagamento">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
                 </Property>
@@ -187,6 +198,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="RelatorioFinaceiro">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
                 </Property>
@@ -209,6 +223,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="Descricao">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
                 </Property>
@@ -231,6 +248,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
                 </Property>
@@ -253,6 +273,9 @@
             </Component>
             <Component class="javax.swing.JLabel" name="sair">
               <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="12" style="1"/>
                 </Property>
@@ -287,7 +310,7 @@
             <Container class="javax.swing.JPanel" name="P1">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                  <Color blue="f1" green="f0" red="ec" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -419,7 +442,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel120">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/icons/icons8_minimize_window_30px_1.png"/>
+                      <Image iconType="3" name="/Veiw/icons/icons8_horizontal_line_30px_3.png"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -431,7 +454,7 @@
             <Container class="javax.swing.JPanel" name="P2">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                  <Color blue="f1" green="f0" red="ec" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -1248,7 +1271,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel107">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/icons/icons8_minimize_window_30px_1.png"/>
+                      <Image iconType="3" name="/Veiw/icons/icons8_horizontal_line_30px_3.png"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1260,7 +1283,7 @@
             <Container class="javax.swing.JPanel" name="P3">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                  <Color blue="f1" green="f0" red="ec" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -1848,7 +1871,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel108">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/icons/icons8_minimize_window_30px_1.png"/>
+                      <Image iconType="3" name="/Veiw/icons/icons8_horizontal_line_30px_3.png"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -1860,7 +1883,7 @@
             <Container class="javax.swing.JPanel" name="P4">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                  <Color blue="f1" green="f0" red="ec" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -2527,7 +2550,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel109">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/icons/icons8_minimize_window_30px_1.png"/>
+                      <Image iconType="3" name="/Veiw/icons/icons8_horizontal_line_30px_3.png"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -2539,7 +2562,7 @@
             <Container class="javax.swing.JPanel" name="P5">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                  <Color blue="f1" green="f0" red="ec" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -3063,7 +3086,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel110">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/icons/icons8_minimize_window_30px_1.png"/>
+                      <Image iconType="3" name="/Veiw/icons/icons8_horizontal_line_30px_3.png"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -3075,7 +3098,7 @@
             <Container class="javax.swing.JPanel" name="P6">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="66" green="ff" red="66" type="rgb"/>
+                  <Color blue="f1" green="f0" red="ec" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -3110,7 +3133,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel111">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/icons/icons8_minimize_window_30px_1.png"/>
+                      <Image iconType="3" name="/Veiw/icons/icons8_horizontal_line_30px_3.png"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -3122,7 +3145,7 @@
             <Container class="javax.swing.JPanel" name="P7">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                  <Color blue="f1" green="f0" red="ec" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -3427,7 +3450,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel112">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/icons/icons8_minimize_window_30px_1.png"/>
+                      <Image iconType="3" name="/Veiw/icons/icons8_horizontal_line_30px_3.png"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -3439,7 +3462,7 @@
             <Container class="javax.swing.JPanel" name="P8">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                  <Color blue="f1" green="f0" red="ec" type="rgb"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -3461,21 +3484,21 @@
                               <Component id="jLabel70" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel71" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="359" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="299" max="-2" attributes="0"/>
                           <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="347" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="407" max="-2" attributes="0"/>
                                   <Component id="jLabel72" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="jLabel113" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="-2" pref="380" max="-2" attributes="0"/>
                                   <Component id="jButton8" min="-2" pref="134" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          <EmptySpace pref="34" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace pref="329" max="32767" attributes="0"/>
@@ -3490,11 +3513,7 @@
                               </Group>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jScrollPane4" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jScrollPane4" alignment="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -3511,9 +3530,9 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel113" min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
-                                          <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                               <Group type="102" attributes="0">
                                                   <Component id="jLabel70" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="32767" attributes="0"/>
@@ -3523,6 +3542,10 @@
                                           </Group>
                                       </Group>
                                   </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel68" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
@@ -3540,7 +3563,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel68">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/imagens/logo2.png"/>
+                      <Image iconType="3" name="/Veiw/imagens/Marcelo2.png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -3628,8 +3651,9 @@
                   <SubComponents>
                     <Component class="javax.swing.JTextArea" name="jTextArea1">
                       <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                          <Color blue="f1" green="f0" red="ec" type="rgb"/>
                         </Property>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -3653,7 +3677,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel113">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Veiw/icons/icons8_minimize_window_30px_1.png"/>
+                      <Image iconType="3" name="/Veiw/icons/icons8_horizontal_line_30px_3.png"/>
                     </Property>
                   </Properties>
                   <Events>

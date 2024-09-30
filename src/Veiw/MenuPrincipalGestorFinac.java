@@ -60,6 +60,7 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
         jLabel61 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
         P4 = new javax.swing.JPanel();
         jLabel75 = new javax.swing.JLabel();
         jLabel76 = new javax.swing.JLabel();
@@ -75,9 +76,12 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
         jLabel64 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         jLabel91 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
         P6 = new javax.swing.JPanel();
         jLabel68 = new javax.swing.JLabel();
         jLabel69 = new javax.swing.JLabel();
@@ -97,64 +101,69 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel2.setBackground(new java.awt.Color(44, 62, 80));
 
         Home.setBackground(new java.awt.Color(255, 255, 255));
         Home.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         Home.setForeground(new java.awt.Color(255, 255, 255));
         Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_community_grants_30px.png"))); // NOI18N
         Home.setText("Recursos Humanos");
-        Home.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 11), new java.awt.Color(255, 255, 255))); // NOI18N
+        Home.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         Home.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 HomeMouseClicked(evt);
             }
         });
 
+        Parquear.setBackground(new java.awt.Color(255, 255, 255));
         Parquear.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         Parquear.setForeground(new java.awt.Color(255, 255, 255));
         Parquear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_average_2_30px_1.png"))); // NOI18N
         Parquear.setText("Preços");
-        Parquear.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 11), new java.awt.Color(255, 255, 255))); // NOI18N
+        Parquear.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         Parquear.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ParquearMouseClicked(evt);
             }
         });
 
+        Pagamento.setBackground(new java.awt.Color(255, 255, 255));
         Pagamento.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         Pagamento.setForeground(new java.awt.Color(255, 255, 255));
         Pagamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_money_bag_30px.png"))); // NOI18N
         Pagamento.setText("Relatorio Finaceiro");
-        Pagamento.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 11), new java.awt.Color(255, 255, 255))); // NOI18N
+        Pagamento.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         Pagamento.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 PagamentoMouseClicked(evt);
             }
         });
 
+        Descricao.setBackground(new java.awt.Color(255, 255, 255));
         Descricao.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         Descricao.setForeground(new java.awt.Color(255, 255, 255));
         Descricao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_increase_30px.png"))); // NOI18N
         Descricao.setText("Relatorio Funcionarios");
-        Descricao.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 11), new java.awt.Color(255, 255, 255))); // NOI18N
+        Descricao.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         Descricao.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 DescricaoMouseClicked(evt);
             }
         });
 
+        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_ask_question_30px.png"))); // NOI18N
         jLabel6.setText("Sobre");
-        jLabel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 11), new java.awt.Color(255, 255, 255))); // NOI18N
+        jLabel6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel6MouseClicked(evt);
             }
         });
 
+        sair.setBackground(new java.awt.Color(255, 255, 255));
         sair.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         sair.setForeground(new java.awt.Color(255, 255, 255));
         sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_exit_30px.png"))); // NOI18N
@@ -201,7 +210,7 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 650));
 
-        P1.setBackground(new java.awt.Color(204, 204, 204));
+        P1.setBackground(new java.awt.Color(236, 240, 241));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_car_30px.png"))); // NOI18N
 
@@ -222,7 +231,7 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("GESTOR FINACEIRO");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_minimize_window_30px_1.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_horizontal_line_30px_3.png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
@@ -281,7 +290,7 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
 
         Paineis.addTab("tab6", P1);
 
-        P2.setBackground(new java.awt.Color(204, 204, 204));
+        P2.setBackground(new java.awt.Color(236, 240, 241));
         P2.setForeground(new java.awt.Color(204, 204, 204));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_car_30px.png"))); // NOI18N
@@ -299,7 +308,7 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
         jLabel92.setForeground(new java.awt.Color(0, 0, 0));
         jLabel92.setText("jLabel92");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_minimize_window_30px_1.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_horizontal_line_30px_3.png"))); // NOI18N
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
@@ -350,7 +359,7 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
 
         Paineis.addTab("tab1", P2);
 
-        P3.setBackground(new java.awt.Color(204, 204, 204));
+        P3.setBackground(new java.awt.Color(236, 240, 241));
 
         jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_car_30px.png"))); // NOI18N
 
@@ -366,12 +375,19 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("Parquear");
+        jLabel2.setText("Preços do Parqueamento");
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_minimize_window_30px_1.png"))); // NOI18N
         jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel13MouseClicked(evt);
+            }
+        });
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_horizontal_line_30px_3.png"))); // NOI18N
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
             }
         });
 
@@ -381,22 +397,23 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
             P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(P3Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addComponent(jLabel30)
+                .addGap(18, 18, 18)
+                .addGroup(P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel31)
+                    .addComponent(jLabel32))
+                .addGroup(P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(P3Layout.createSequentialGroup()
-                        .addGap(515, 515, 515)
-                        .addComponent(jLabel2)
-                        .addGap(550, 550, 550))
-                    .addGroup(P3Layout.createSequentialGroup()
-                        .addComponent(jLabel30)
-                        .addGap(18, 18, 18)
-                        .addGroup(P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel31)
-                            .addComponent(jLabel32))
-                        .addGap(284, 284, 284)
+                        .addGap(298, 298, 298)
                         .addComponent(jLabel61)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel13)
-                        .addGap(34, 34, 34))))
+                        .addGap(485, 485, 485)
+                        .addComponent(jLabel19)
+                        .addGap(72, 72, 72)
+                        .addComponent(jLabel13))
+                    .addGroup(P3Layout.createSequentialGroup()
+                        .addGap(217, 217, 217)
+                        .addComponent(jLabel2)))
+                .addGap(34, 34, 34))
         );
         P3Layout.setVerticalGroup(
             P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -412,17 +429,18 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
                                 .addComponent(jLabel32))))
                     .addGroup(P3Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(P3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel13))
-                        .addGap(18, 18, 18)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel19))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel2)))
-                .addGap(559, 559, 559))
+                .addContainerGap(565, Short.MAX_VALUE))
         );
 
         Paineis.addTab("tab2", P3);
 
-        P4.setBackground(new java.awt.Color(204, 204, 204));
+        P4.setBackground(new java.awt.Color(236, 240, 241));
 
         jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_car_30px.png"))); // NOI18N
 
@@ -451,7 +469,7 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
             }
         });
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_minimize_window_30px_1.png"))); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_horizontal_line_30px_3.png"))); // NOI18N
         jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel14MouseClicked(evt);
@@ -513,7 +531,7 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
 
         Paineis.addTab("tab4", P4);
 
-        P5.setBackground(new java.awt.Color(204, 204, 204));
+        P5.setBackground(new java.awt.Color(236, 240, 241));
 
         jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_car_30px.png"))); // NOI18N
 
@@ -527,32 +545,29 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
 
         jLabel65.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel65.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel65.setText("Relatorio dos Clientes");
+        jLabel65.setText("Relatorio Finaceiro dos Funcionarios");
 
         jButton6.setBackground(new java.awt.Color(51, 51, 51));
         jButton6.setFont(new java.awt.Font("Dialog", 0, 12)); // NOI18N
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_search_20px.png"))); // NOI18N
         jButton6.setText("Pesquisar");
 
-        jButton7.setBackground(new java.awt.Color(51, 255, 51));
-        jButton7.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(0, 0, 0));
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_print_20px.png"))); // NOI18N
-        jButton7.setText("Imprimir");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-
         jLabel91.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_minimize_window_30px_1.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_horizontal_line_30px_3.png"))); // NOI18N
         jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel15MouseClicked(evt);
             }
         });
+
+        jLabel17.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel17.setText("ID:");
+
+        jLabel18.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel18.setText("Número de Carros Atendidos:");
 
         javax.swing.GroupLayout P5Layout = new javax.swing.GroupLayout(P5);
         P5.setLayout(P5Layout);
@@ -560,29 +575,37 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
             P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(P5Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
+                .addComponent(jLabel62)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(P5Layout.createSequentialGroup()
-                        .addGap(570, 570, 570)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton7))
-                    .addGroup(P5Layout.createSequentialGroup()
-                        .addComponent(jLabel62)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(P5Layout.createSequentialGroup()
-                                .addGap(402, 402, 402)
-                                .addComponent(jLabel65)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 481, Short.MAX_VALUE))
-                            .addGroup(P5Layout.createSequentialGroup()
-                                .addGroup(P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel63)
-                                    .addComponent(jLabel64))
-                                .addGap(290, 290, 290)
-                                .addComponent(jLabel91)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel15)))))
+                            .addComponent(jLabel63)
+                            .addComponent(jLabel64))
+                        .addGap(290, 290, 290)
+                        .addComponent(jLabel91)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel15))
+                    .addGroup(P5Layout.createSequentialGroup()
+                        .addGap(0, 265, Short.MAX_VALUE)
+                        .addComponent(jLabel17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(527, 527, 527)))
                 .addGap(33, 33, 33))
+            .addGroup(P5Layout.createSequentialGroup()
+                .addGroup(P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(P5Layout.createSequentialGroup()
+                        .addGap(422, 422, 422)
+                        .addGroup(P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel65)))
+                    .addGroup(P5Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabel18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         P5Layout.setVerticalGroup(
             P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -595,8 +618,7 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
                             .addGroup(P5Layout.createSequentialGroup()
                                 .addComponent(jLabel63)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel64)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(jLabel64))))
                     .addGroup(P5Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -605,17 +627,26 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
                                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel65)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                        .addComponent(jLabel65)))
+                .addGroup(P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(P5Layout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addGroup(P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton6)))
+                    .addGroup(P5Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel17)))
+                .addGap(69, 69, 69)
                 .addGroup(P5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(532, 532, 532))
+                    .addComponent(jLabel18)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(431, 431, 431))
         );
 
         Paineis.addTab("tab7", P5);
 
-        P6.setBackground(new java.awt.Color(204, 204, 204));
+        P6.setBackground(new java.awt.Color(236, 240, 241));
 
         jLabel68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/imagens/Marcelo2.png"))); // NOI18N
 
@@ -655,7 +686,7 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
         jTextArea1.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         jScrollPane4.setViewportView(jTextArea1);
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_minimize_window_30px_1.png"))); // NOI18N
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Veiw/icons/icons8_horizontal_line_30px_3.png"))); // NOI18N
         jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel16MouseClicked(evt);
@@ -736,10 +767,6 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
-
     private void sairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sairMouseClicked
         System.exit(0);
     }//GEN-LAST:event_sairMouseClicked
@@ -791,6 +818,10 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
     private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
          this.setState(MenuPrincipalGestorFinac.ICONIFIED);
     }//GEN-LAST:event_jLabel16MouseClicked
+
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+        this.setState(MenuPrincipalGestorFinac.ICONIFIED);
+    }//GEN-LAST:event_jLabel19MouseClicked
 
     /**
      * @param args the command line arguments
@@ -871,7 +902,6 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
     private javax.swing.JTabbedPane Paineis;
     private javax.swing.JLabel Parquear;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -881,6 +911,9 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
@@ -917,7 +950,9 @@ public class MenuPrincipalGestorFinac extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JButton pesquisarpagadmin;
     private javax.swing.JLabel sair;
     // End of variables declaration//GEN-END:variables

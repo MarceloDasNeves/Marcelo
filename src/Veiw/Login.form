@@ -316,7 +316,7 @@
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Veiw/icons/icons8_minimize_window_30px_1.png"/>
+              <Image iconType="3" name="/Veiw/icons/icons8_horizontal_line_30px_3.png"/>
             </Property>
           </Properties>
           <Events>

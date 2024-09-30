@@ -11,27 +11,19 @@ public class ClienteMensal extends Cliente {
         this.prazoSaida = prazoSaida;
     }
 
-    // Método para calcular o valor com multa se o prazo for excedido
     @Override
     public double calcularValorTotal() {
         if (dataHoraSaida == null) {
             dataHoraSaida = LocalDateTime.now();
         }
 
-        Duration duracao = Duration.between(dataHoraEntrada, dataHoraSaida);
-        long horas = duracao.toHours();
-        long minutos = duracao.toMinutesPart();
-
-        if (minutos > 0) {
-            horas++;
-        }
+        long horas = Duration.between(dataHoraEntrada, dataHoraSaida).toHours();
 
         double valorTotal = horas * valorPorHora;
 
         // Se o cliente exceder o prazo, aplica multa de 10%
         if (dataHoraSaida.isAfter(prazoSaida)) {
-            double multa = valorTotal * 0.10; // 10% de multa
-            valorTotal += multa;
+            valorTotal += valorTotal * 0.10; // 10% de multa
         }
 
         return valorTotal;
@@ -47,9 +39,8 @@ public class ClienteMensal extends Cliente {
 
     @Override
     public String exibirDetalhes() {
-        return String.format(
-            "ID Cliente: %d\nNome: %s\nContacto: %s\nResidência: %s\nMatrícula: %s\nCor do Carro: %s\nValor por Hora: %.2f\nTipo de Pagamento: %s\nEstacionado: %s\nHora de Entrada: %s\nPrazo de Saída: %s\n",
-            idCliente, getNome(), getContacto(), getResidencia(), matricula, corCarro, valorPorHora, tipoPagamento, (estacionado ? "Sim" : "Não"), dataHoraEntrada.toString(), prazoSaida.toString()
+        return String.format("ID Cliente: %d\nNome: %s\nContacto: %s\nResidência: %s\nMatrícula: %s\nCor do Carro: %s\nValor por Hora: %.2f\nTipo de Pagamento: %s\nEstacionado: %s\nHora de Entrada: %s\nPrazo de Saída: %s\n",
+            idCliente, getNome(), getContacto(), getResidencia(), matricula, corCarro, valorPorHora, getTipoPagamento(), (estacionado ? "Sim" : "Não"), dataHoraEntrada.toString(), prazoSaida.toString()
         );
     }
 }

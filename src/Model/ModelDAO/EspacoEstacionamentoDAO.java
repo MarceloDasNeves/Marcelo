@@ -1,8 +1,9 @@
-
 package Model.ModelDAO;
 
-import Model.*;
+import Model.EspacoEstacionamento;
+import Model.Cliente; 
 import java.sql.*;
+import model.DBConnect;
 
 public class EspacoEstacionamentoDAO {
     public void create(EspacoEstacionamento espaco) throws SQLException {
@@ -25,11 +26,14 @@ public class EspacoEstacionamentoDAO {
             stmt.setString(1, identificador);
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
-                return new EspacoEstacionamento(
+                EspacoEstacionamento espaco = new EspacoEstacionamento(
                     rs.getString("identificador"),
                     rs.getDouble("valorPorHora"),
                     rs.getBoolean("isVip")
                 );
+                espaco.setOcupado(rs.getBoolean("ocupado")); // Definir o estado ocupado
+                // Aqui, você pode precisar carregar o cliente se necessário
+                return espaco;
             }
         }
         return null;
@@ -57,4 +61,3 @@ public class EspacoEstacionamentoDAO {
         }
     }
 }
-

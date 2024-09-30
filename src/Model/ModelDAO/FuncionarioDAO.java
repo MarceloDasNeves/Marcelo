@@ -1,8 +1,10 @@
 package Model.ModelDAO;
-import Model.*;
+
+import Model.Funcionario;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import model.DBConnect;
 
 public class FuncionarioDAO {
     public void create(Funcionario funcionario) throws SQLException {
@@ -31,6 +33,8 @@ public class FuncionarioDAO {
             if (rs.next()) {
                 return new Funcionario(
                     rs.getString("nome"),
+                    rs.getString("contacto"),
+                    rs.getString("residencia"),
                     rs.getString("usuario"),
                     rs.getString("senha"),
                     rs.getString("numeroBI"),
@@ -57,7 +61,7 @@ public class FuncionarioDAO {
             stmt.setString(7, funcionario.getDepartamento());
             stmt.setString(8, funcionario.getTipo());
             stmt.setBoolean(9, funcionario.isAtivo());
-            stmt.setInt(10, funcionario.getId());
+            stmt.setInt(10, funcionario.getIdFuncionario()); 
             stmt.executeUpdate();
         }
     }
@@ -81,6 +85,8 @@ public class FuncionarioDAO {
             while (rs.next()) {
                 funcionarios.add(new Funcionario(
                     rs.getString("nome"),
+                    rs.getString("contacto"),
+                    rs.getString("residencia"),
                     rs.getString("usuario"),
                     rs.getString("senha"),
                     rs.getString("numeroBI"),

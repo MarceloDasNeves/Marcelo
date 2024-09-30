@@ -17,6 +17,7 @@ public class EspacoEstacionamento implements Serializable {
         this.valorPorHora = valorPorHora;
         this.isVip = isVip;
         this.ocupado = false;
+        this.horaEntrada = null; // Inicializar a hora de entrada
     }
 
     public String getIdentificador() {
@@ -45,6 +46,10 @@ public class EspacoEstacionamento implements Serializable {
 
     public boolean isOcupado() {
         return ocupado;
+    }
+
+    public void setOcupado(boolean ocupado) {
+        this.ocupado = ocupado;
     }
 
     // Verifica se o espaço está disponível antes de ocupar

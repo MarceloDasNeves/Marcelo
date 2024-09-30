@@ -1,58 +1,36 @@
 package Model;
 
-import java.time.Duration;
 import java.time.LocalDateTime;
 
 public class Cliente extends Pessoa {
     private static int idCounter = 1;
-    protected int idCliente;
-    protected String matricula;
-    protected String corCarro;
-    protected double valorPorHora;
-    protected String tipoPagamento;
-    protected boolean estacionado;
-    protected LocalDateTime dataHoraEntrada;
-    protected LocalDateTime dataHoraSaida;
-    protected int espacoEstacionado;
+    private int idCliente;
+    private String tipoPagamento;  // "mensal" ou "temporário"
+    private boolean estacionado;
+    private LocalDateTime dataHoraEntrada;
+    private LocalDateTime dataHoraSaida;
+    private int espacoEstacionado;
+    private Veiculo veiculo;
 
-    public Cliente(String nome, String contacto, String residencia, String matricula, String corCarro, double valorPorHora, String tipoPagamento) {
+    public Cliente(String nome, String contacto, String residencia, Veiculo veiculo, String tipoPagamento) {
         super(nome, contacto, residencia);
         this.idCliente = idCounter++;
-        this.matricula = matricula;
-        this.corCarro = corCarro;
-        this.valorPorHora = valorPorHora;
+        this.veiculo = veiculo;
         this.tipoPagamento = tipoPagamento;
         this.estacionado = true;
         this.dataHoraEntrada = LocalDateTime.now();
     }
 
-    // Getters e setters
     public int getIdCliente() {
         return idCliente;
     }
 
-    public String getMatricula() {
-        return matricula;
+    public String getTipoPagamento() {
+        return tipoPagamento;
     }
 
-    public String getCorCarro() {
-        return corCarro;
-    }
-
-    public double getValorPorHora() {
-        return valorPorHora;
-    }
-
-    public void setValorPorHora(double valorPorHora) {
-        this.valorPorHora = valorPorHora;
-    }
-
-    public LocalDateTime getDataHoraEntrada() {
-        return dataHoraEntrada;
-    }
-
-    public LocalDateTime getDataHoraSaida() {
-        return dataHoraSaida;
+    public void setTipoPagamento(String tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
     }
 
     public boolean isEstacionado() {
@@ -63,12 +41,24 @@ public class Cliente extends Pessoa {
         this.estacionado = estacionado;
     }
 
+    public LocalDateTime getDataHoraEntrada() {
+        return dataHoraEntrada;
+    }
+
+    public LocalDateTime getDataHoraSaida() {
+        return dataHoraSaida;
+    }
+
     public int getEspacoEstacionado() {
         return espacoEstacionado;
     }
 
     public void setEspacoEstacionado(int espacoEstacionado) {
         this.espacoEstacionado = espacoEstacionado;
+    }
+
+    public Veiculo getVeiculo() {
+        return veiculo;
     }
 
     public void registrarSaida() {
@@ -80,29 +70,27 @@ public class Cliente extends Pessoa {
         }
     }
 
-    // Método para calcular o valor total a ser pago (clientes temporários)
     public double calcularValorTotal() {
         if (dataHoraSaida == null) {
             dataHoraSaida = LocalDateTime.now();
         }
 
-        Duration duracao = Duration.between(dataHoraEntrada, dataHoraSaida);
-        long horas = duracao.toHours();
-        long minutos = duracao.toMinutesPart();
+        long horas = java.time.Duration.between(dataHoraEntrada, dataHoraSaida).toHours();
+        long minutos = java.time.Duration.between(dataHoraEntrada, dataHoraSaida).toMinutesPart();
 
         if (minutos > 0) {
             horas++;
         }
 
-        return horas * valorPorHora;
+        return horas * veiculo.getValorPorHora();
     }
 
-    // Método para exibir detalhes
     @Override
     public String exibirDetalhes() {
         return String.format(
-            "ID Cliente: %d\nNome: %s\nContacto: %s\nResidência: %s\nMatrícula: %s\nCor do Carro: %s\nValor por Hora: %.2f\nTipo de Pagamento: %s\nEstacionado: %s\nHora de Entrada: %s\n",
-            idCliente, getNome(), getContacto(), getResidencia(), matricula, corCarro, valorPorHora, tipoPagamento, (estacionado ? "Sim" : "Não"), dataHoraEntrada.toString()
+            "ID Cliente: %d\nNome: %s\nContacto: %s\nResidência: %s\nMatrícula: %s\nCor do Carro: %s\nValor por Hora: %.2f\nTipo de Pagamento: %s\nEstacionado: %s\nHora de Entrada: %s\nEspaço Estacionado: %d\n",
+            idCliente, getNome(), getContacto(), getResidencia(), veiculo.getMatricula(), veiculo.getCorCarro(), veiculo.getValorPorHora(),
+            tipoPagamento, (estacionado ? "Sim" : "Não"), dataHoraEntrada.toString(), espacoEstacionado
         );
     }
 }

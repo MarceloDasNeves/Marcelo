@@ -1337,7 +1337,7 @@ public class MenuPrincipalAdmin extends javax.swing.JFrame {
                         .addComponent(jLabel60)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel109)
-                        .addGap(29, 29, 29))))
+                        .addGap(36, 36, 36))))
             .addGroup(P4Layout.createSequentialGroup()
                 .addGroup(P4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(P4Layout.createSequentialGroup()

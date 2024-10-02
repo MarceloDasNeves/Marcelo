@@ -11,7 +11,7 @@ import java.sql.ResultSet;
 //import java.util.logging.Logger;
 
 
-public class DBConnect {
+public class DBConne {
     //private static final DRIVER ="com.mysql.jdbc.Driver";
     private static final String URL = "jdbc:mysql://localhost:3306/estacionamento_db";
     private static final String USER = "root";

@@ -93,4 +93,8 @@ public class Cliente extends Pessoa {
             tipoPagamento, (estacionado ? "Sim" : "Não"), dataHoraEntrada.toString(), espacoEstacionado
         );
     }
+
+    public void setDataHoraSaida(LocalDateTime dataHoraSaida) {
+        this.dataHoraSaida = dataHoraSaida;
+    }
 }

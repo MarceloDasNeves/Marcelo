@@ -4,12 +4,12 @@ import Model.Funcionario;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import model.DBConnect;
+import model.DBConne;
 
 public class FuncionarioDAO {
     public void create(Funcionario funcionario) throws SQLException {
         String sql = "INSERT INTO Funcionario (nome, usuario, senha, numeroBI, NUIT, Email, departamento, tipo, ativo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        try (Connection conn = DBConnect.getConnection();
+        try (Connection conn = DBConne.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, funcionario.getNome());
             stmt.setString(2, funcionario.getUsuario());
@@ -26,7 +26,7 @@ public class FuncionarioDAO {
 
     public Funcionario read(int idFuncionario) throws SQLException {
         String sql = "SELECT * FROM Funcionario WHERE idFuncionario = ?";
-        try (Connection conn = DBConnect.getConnection();
+        try (Connection conn = DBConne.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setInt(1, idFuncionario);
             ResultSet rs = stmt.executeQuery();
@@ -50,7 +50,7 @@ public class FuncionarioDAO {
 
     public void update(Funcionario funcionario) throws SQLException {
         String sql = "UPDATE Funcionario SET nome = ?, usuario = ?, senha = ?, numeroBI = ?, NUIT = ?, Email = ?, departamento = ?, tipo = ?, ativo = ? WHERE idFuncionario = ?";
-        try (Connection conn = DBConnect.getConnection();
+        try (Connection conn = DBConne.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, funcionario.getNome());
             stmt.setString(2, funcionario.getUsuario());
@@ -68,7 +68,7 @@ public class FuncionarioDAO {
 
     public void delete(int idFuncionario) throws SQLException {
         String sql = "DELETE FROM Funcionario WHERE idFuncionario = ?";
-        try (Connection conn = DBConnect.getConnection();
+        try (Connection conn = DBConne.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setInt(1, idFuncionario);
             stmt.executeUpdate();
@@ -78,7 +78,7 @@ public class FuncionarioDAO {
     public List<Funcionario> searchByName(String nome) throws SQLException {
         String sql = "SELECT * FROM Funcionario WHERE nome LIKE ?";
         List<Funcionario> funcionarios = new ArrayList<>();
-        try (Connection conn = DBConnect.getConnection();
+        try (Connection conn = DBConne.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, "%" + nome + "%");
             ResultSet rs = stmt.executeQuery();
